@@ -1,0 +1,5 @@
+{
+  "dbName": "filmvisarna",
+  "passwordSalt": "@&veryhardtoguess$%",
+  "cookieSecret": "veryunusal#ö"
+}

@@ -1,0 +1,11 @@
+<div class="jumbotron">
+  <h2>${this.act.name}</h2>
+  <h4>${this.venue}</h4>
+  <h5>${this.localDate}</h5>
+  <h6>${this.capacity.remaining} tickets left (out of ${this.capacity.total})</h6>
+  ${location.pathname == '/shows'?
+    `<a class="btn btn-primary" href="/show/${this._id}">Tickets</a>`
+    :
+    `<button class="btn btn-primary book-show" data-id="${this._id}">Book</button>`
+  }
+</div>

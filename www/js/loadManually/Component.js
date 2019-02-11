@@ -1,5 +1,3 @@
-class REST {}
-
 class Component extends REST {
 
   constructor(props){

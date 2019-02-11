@@ -6,9 +6,14 @@ class StartPage extends Component {
     this.mountCount = 0;
   }
 
-  mount(){
+  async mount(){
     this.mountCount++;
     this.render();
+    let loggedIn = await Login.find();
+    console.log('loggedIn', loggedIn);
+    if(!loggedIn.email){
+      Component.routerInstance.goto('/login');
+    }
   }
 
 }

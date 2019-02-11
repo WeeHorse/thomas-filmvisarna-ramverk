@@ -48,6 +48,12 @@ class Router {
     $(`a[href="${Router.path}"]`).addClass('active');
   }
 
+  goto(path){
+    history.pushState(null, null, path);
+    this.setPath(path);
+    this.mainInstance.render();
+  }
+
   static registerRoute(route){
     Router.routes.push(route);
   }

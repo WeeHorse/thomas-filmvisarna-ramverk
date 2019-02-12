@@ -6,7 +6,7 @@ class App extends Component {
     this.pageContent = new PageContent();
     this.footer = new Footer();
     // only in the App class:
-    Component.routerInstance = new Router(this.pageContent);
+    new Router(this.pageContent);
     $('body').html(this.render());
   }
 

@@ -12,7 +12,7 @@ class StartPage extends Component {
     let loggedIn = await Login.find();
     console.log('loggedIn', loggedIn);
     if(!loggedIn.email){
-      Component.routerInstance.goto('/login');
+      Router.goto('/login');
     }
   }
 

@@ -22,7 +22,7 @@ class LoginPage extends Component{
     if(this.result.error){
       this.render();
     }else{
-      Component.routerInstance.goto('/');
+      Router.goto('/');
     }
   }
 
